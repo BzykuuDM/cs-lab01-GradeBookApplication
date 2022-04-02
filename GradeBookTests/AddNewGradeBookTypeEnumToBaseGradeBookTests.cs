@@ -60,6 +60,7 @@ namespace GradeBookTests
         public void AddPropertyTypeToBaseGradeBookTests()
         {
             // Get property Type from BaseGradeBook
+            var Type = typeof(BaseGradeBook).GetProperty("GradeBookType");
             var typeProperty = typeof(BaseGradeBook).GetProperty("Type");
 
             // Test that the property Type exists in BaseGradeBook
